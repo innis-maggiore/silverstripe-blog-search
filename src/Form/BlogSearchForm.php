@@ -10,7 +10,7 @@ use SilverStripe\Forms\DropdownField;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\Form;
 use SilverStripe\Forms\FormAction;
-use SilverStripe\Forms\RequiredFields;
+use SilverStripe\Forms\Validation\RequiredFieldsValidator;
 use SilverStripe\Forms\TextField;
 
 /**
@@ -160,7 +160,7 @@ class BlogSearchForm extends Form
      */
     protected function getFormValidator()
     {
-        $validator = RequiredFields::create([]);
+        $validator = RequiredFieldsValidator::create([]);
 
         $this->extend('updateFormValidator', $validator);
 
