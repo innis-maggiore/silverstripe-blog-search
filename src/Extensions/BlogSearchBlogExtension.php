@@ -4,7 +4,7 @@ namespace WebFox\BlogSearch\Extensions;
 
 use SilverStripe\Control\Controller;
 use SilverStripe\Core\Convert;
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 use SilverStripe\ORM\DataList;
 
 /**
@@ -13,7 +13,7 @@ use SilverStripe\ORM\DataList;
  *
  * @property Blog $owner
  */
-class BlogSearchBlogExtension extends DataExtension
+class BlogSearchBlogExtension extends Extension
 {
     /**
      * @param DataList $blogPosts
